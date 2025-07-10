@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Merienda:wght@700&family=Nunito+Sans:wght@400;700&display=swap');
+
+body {
+    background: linear-gradient(120deg, #87CEEB 0%, #1A365D 100%);
+    min-height: 100vh;
+    font-family: 'Nunito Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #1A365D;
+}
+
+h1 {
+    font-family: 'Merienda', sans-serif;
+    color: #1A365D;
+    font-size: 2rem;
+    font-weight: 700;
+    margin: 40px 0 18px 0;
+    text-align: center;
+}
+
+a {
+    background: #1A365D;
+    color: #fff;
+    font-family: 'Nunito Sans', sans-serif;
+    font-weight: 700;
+    font-size: 1rem;
+    border-radius: 7px;
+    padding: 8px 18px;
+    text-decoration: none;
+    transition: background 0.2s, color 0.2s;
+    margin: 0 8px 24px 8px;
+    display: inline-block;
+}
+
+a:hover {
+    background: #25487a;
+    color: #87CEEB;
+}
+
+h2 {
+    font-family: 'Merienda', sans-serif;
+    color: #25487a;
+    font-size: 1.3rem;
+    font-weight: 700;
+    margin: 30px 0 18px 0;
+    text-align: center;
+}
+
+form {
+    background: #fff;
+    border-radius: 14px;
+    box-shadow: 0 4px 18px rgba(26, 54, 93, 0.10);
+    width: 90vw;
+    max-width: 500px;
+    margin: 0 auto 32px auto;
+    padding: 24px 28px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+form label {
+    font-size: 1rem;
+    color: #1A365D;
+    font-weight: 700;
+    margin-bottom: 6px;
+}
+
+input[type="text"],
+input[type="number"] {
+    padding: 9px 12px;
+    border: 1.5px solid #87CEEB;
+    border-radius: 7px;
+    font-size: 1rem;
+    font-family: 'Nunito Sans', sans-serif;
+    background: #f8fbfd;
+    color: #25487a;
+    margin-bottom: 10px;
+    transition: border 0.2s;
+}
+
+input[type="text"]:focus,
+input[type="number"]:focus {
+    border-color: #1A365D;
+    outline: none;
+}
+
+button[type="submit"] {
+    background: #1A365D;
+    color: #fff;
+    font-family: 'Nunito Sans', sans-serif;
+    font-weight: 700;
+    font-size: 1rem;
+    border: none;
+    border-radius: 8px;
+    padding: 8px 20px;
+    text-decoration: none;
+    transition: background 0.2s, color 0.2s;
+    cursor: pointer;
+    margin-right: 8px;
+}
+
+button[type="submit"]:hover {
+    background: #25487a;
+    color: #87CEEB;
+}
+
+table {
+    width: 90vw;
+    max-width: 800px;
+    margin: 0 auto 32px auto;
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 18px rgba(26, 54, 93, 0.10);
+    border-collapse: collapse;
+    overflow: hidden;
+    font-size: 1rem;
+}
+
+th, td {
+    padding: 12px 14px;
+    text-align: center;
+    border-bottom: 1px solid #e2e8f0;
+    font-size: 1rem;
+}
+
+th {
+    background: #87CEEB;
+    color: #1A365D;
+    font-family: 'Nunito Sans', sans-serif;
+    font-weight: 700;
+}
+
+tr:last-child td {
+    border-bottom: none;
+}
+
+@media (max-width: 700px) {
+    table, th, td {
+        font-size: 0.95rem;
+        padding: 8px 6px;
+    }
+    form {
+        width: 98vw;
+        padding: 12px 2vw;
+    }
+    h1, h2 {
+        font-size: 1.1rem;
+    }
+    a {
+        font-size: 0.95rem;
+        padding: 7px 10px;
+    }
+}

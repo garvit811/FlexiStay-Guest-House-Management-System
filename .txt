@@ -1,0 +1,42 @@
+<!-- Guest House Listings -->
+<div class="guesthouse-listing">
+    <h2>Available Guest Houses</h2>
+
+    <?php if (!empty($guest_houses)): ?>
+        <div class="guest-house-grid">
+            <?php foreach ($guest_houses as $gh): ?>
+                <div class="guest-house-card">
+                    <h3><?= htmlspecialchars($gh['name']) ?></h3>
+                    <!-- <p><strong>Location:</strong> <?= htmlspecialchars($gh['location']) ?>, <?= htmlspecialchars($gh['city']) ?>, <?= htmlspecialchars($gh['state']) ?></p> -->
+                    <p><?= nl2br(htmlspecialchars($gh['description'])) ?></p>
+
+                    <!-- Room types -->
+                    <?php
+                    try {
+                        $roomStmt = $pdo->prepare("SELECT * FROM rooms WHERE guesthouse_id = :ghid");
+                        $roomStmt->bindParam(':ghid', $gh['id']);
+                        $roomStmt->execute();
+                        $rooms = $roomStmt->fetchAll(PDO::FETCH_ASSOC);
+                    } catch (PDOException $e) {
+                        $rooms = [];
+                    }
+                    ?>
+
+                    <?php if (!empty($rooms)): ?>
+                        <ul>
+                            <?php foreach ($rooms as $room): ?>
+                                <li><?= htmlspecialchars($room['type']) ?> – ₹<?= $room['price'] ?> (<?= $room['quantity'] ?> rooms)</li>
+                            <?php endforeach; ?>
+                        </ul>
+                    <?php else: ?>
+                        <p>No rooms listed.</p>
+                    <?php endif; ?>
+
+                    <a href="./login.php" class="book-now-btn">Book Now</a>
+                </div>
+            <?php endforeach; ?>
+        </div>
+    <?php else: ?>
+        <p class="no-gh-msg">No guest houses are available at the moment. Please check back later.</p>
+    <?php endif; ?>
+</div>

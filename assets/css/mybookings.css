@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,100..900;1,100..900&family=Caveat:wght@400..700&family=Eczar:wght@400..800&family=Merienda:wght@300..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Orbitron:wght@400..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Playwrite+AU+SA&family=Tektur:wght@400..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #ffffff;
+    color: #333;
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+    user-select: none;
+}
+
+.navbar{
+    background-color: #87CEEB;
+    width: 100%;
+    color: #ffffff;
+    padding: 20px 100px;
+    top: 0;
+    position: sticky;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    user-select: none;
+}
+
+.navbar .logo {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    align-items: center;
+}
+
+.l_icn{
+    font-size: 2.4rem;
+}
+
+.navbar h1 {
+    font-family: 'Merienda', sans-serif;
+    font-size: 2.2rem;
+    font-weight: 700;
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.nav-links .nav-btn {
+    background-color: #1A365D;
+    color: #ffffff;
+    font-family: 'Nunito Sans', sans-serif;
+    border: none;
+    outline: none;
+    padding: 10px 24px;
+    font-size: 1.1rem;
+    font-weight: 700;
+    border-radius: 10px;
+    text-decoration: none;
+    transition: background 0.2s, color 0.2s;
+    cursor: pointer;
+}
+
+.nav-links .nav-btn:hover {
+    background-color: #25487a;
+    color: #87CEEB;
+}
+
+
+.guesthouse-listing {
+    width: 80vw;
+    max-width: 900px;
+    margin: 60px auto 0 auto;
+    padding: 40px 30px;
+    background: #fff;
+    border-radius: 20px;
+    box-shadow: 0 4px 16px rgba(26, 54, 93, 0.07);
+    font-family: 'Nunito Sans', sans-serif;
+}
+
+.guesthouse-listing h2 {
+    font-family: 'Merienda', sans-serif;
+    color: #1A365D;
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 2rem;
+    background: #f8fbfd;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgba(26, 54, 93, 0.07);
+}
+
+th, td {
+    padding: 12px 10px;
+    text-align: center;
+    border-bottom: 1px solid #e2e8f0;
+    font-size: 1rem;
+}
+
+th {
+    background: #e0f7fa;
+    color: #1A365D;
+    font-family: 'Nunito Sans', sans-serif;
+    font-weight: 700;
+}
+
+tr:last-child td {
+    border-bottom: none;
+}
+
+.book-now-btn {
+    background-color: #e53e3e;
+    color: #fff;
+    font-family: 'Nunito Sans', sans-serif;
+    font-weight: 700;
+    font-size: 0.95rem;
+    border: none;
+    border-radius: 8px;
+    padding: 4px 14px;
+    text-decoration: none;
+    transition: background 0.2s, color 0.2s;
+    cursor: pointer;
+}
+
+.book-now-btn:hover {
+    background-color: #b91c1c;
+    color: #fff;
+}
+
+.no-gh-msg {
+    color: #e53e3e;
+    font-size: 1.1rem;
+    text-align: center;
+    margin: 40px 0;
+    font-family: 'Nunito Sans', sans-serif;
+}

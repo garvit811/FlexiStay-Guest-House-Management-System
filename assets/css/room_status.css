@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=Merienda:wght@700&family=Nunito+Sans:wght@400;700&display=swap');
+
+body {
+    background: linear-gradient(120deg, #87CEEB 0%, #1A365D 100%);
+    min-height: 100vh;
+    font-family: 'Nunito Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #1A365D;
+}
+
+h1 {
+    font-family: 'Merienda', sans-serif;
+    color: #1A365D;
+    font-size: 2rem;
+    font-weight: 700;
+    margin: 40px 0 28px 0;
+    text-align: center;
+}
+
+form {
+    background: #fff;
+    border-radius: 14px;
+    box-shadow: 0 4px 18px rgba(26, 54, 93, 0.10);
+    width: 90vw;
+    max-width: 600px;
+    margin: 0 auto 32px auto;
+    padding: 24px 28px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 18px 24px;
+    align-items: center;
+    justify-content: center;
+}
+
+form label {
+    font-size: 1rem;
+    color: #1A365D;
+    font-weight: 700;
+    margin-right: 10px;
+}
+
+input[type="date"] {
+    padding: 8px 12px;
+    border: 1.5px solid #87CEEB;
+    border-radius: 7px;
+    font-size: 1rem;
+    font-family: 'Nunito Sans', sans-serif;
+    background: #f8fbfd;
+    color: #25487a;
+    margin-left: 6px;
+    margin-right: 16px;
+    transition: border 0.2s;
+}
+
+input[type="date"]:focus {
+    border-color: #1A365D;
+    outline: none;
+}
+
+button[type="submit"] {
+    background: #1A365D;
+    color: #fff;
+    font-family: 'Nunito Sans', sans-serif;
+    font-weight: 700;
+    font-size: 1.08rem;
+    border: none;
+    border-radius: 8px;
+    padding: 10px 28px;
+    cursor: pointer;
+    transition: background 0.2s, color 0.2s;
+}
+
+button[type="submit"]:hover {
+    background: #25487a;
+    color: #87CEEB;
+}
+
+h2 {
+    font-family: 'Merienda', sans-serif;
+    color: #25487a;
+    font-size: 1.3rem;
+    font-weight: 700;
+    margin: 40px 0 18px 0;
+    text-align: center;
+}
+
+.table-scroll-x {
+    width: 98vw;
+    max-width: 1200px;
+    margin: 0 auto 40px auto;
+    overflow-x: auto;
+    background: transparent;
+    border-radius: 12px;
+    /* Optional: add a subtle shadow for the scroll container */
+    box-shadow: 0 4px 18px rgba(26, 54, 93, 0.10);
+}
+
+table {
+    width: 100%;
+    min-width: 700px;
+    background: #fff;
+    border-radius: 12px;
+    border-collapse: collapse;
+    font-size: 1rem;
+    /* Remove overflow-x from table itself */
+    margin: 0;
+    box-shadow: none;
+}
+
+th, td {
+    padding: 10px 12px;
+    text-align: center;
+    border-bottom: 1px solid #e2e8f0;
+    font-size: 1rem;
+    min-width: 90px;
+}
+
+th {
+    background: #87CEEB;
+    color: #1A365D;
+    font-family: 'Nunito Sans', sans-serif;
+    font-weight: 700;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+
+tr:last-child td {
+    border-bottom: none;
+}
+
+td {
+    font-weight: 600;
+}
+
+td[style*="color: red"] {
+    background: #fff5f5;
+}
+
+td[style*="color: green"] {
+    background: #f0fff4;
+}
+
+p {
+    color: #e53e3e;
+    font-size: 1.1rem;
+    text-align: center;
+    margin: 40px 0;
+    font-family: 'Nunito Sans', sans-serif;
+}
+

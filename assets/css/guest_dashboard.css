@@ -1,0 +1,363 @@
+@import url('https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,100..900;1,100..900&family=Caveat:wght@400..700&family=Eczar:wght@400..800&family=Merienda:wght@300..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Orbitron:wght@400..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Playwrite+AU+SA&family=Tektur:wght@400..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #ffffff;
+    color: #333;
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+    user-select: none;
+}
+
+.navbar{
+    background-color: #87CEEB;
+    width: 100%;
+    color: #ffffff;
+    padding: 20px 100px;
+    top: 0;
+    position: sticky;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    user-select: none;
+}
+
+.navbar .logo {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    align-items: center;
+}
+
+.l_icn{
+    font-size: 2.4rem;
+}
+
+.navbar h1 {
+    font-family: 'Merienda', sans-serif;
+    font-size: 2.2rem;
+    font-weight: 700;
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.nav-links .nav-btn {
+    background-color: #1A365D;
+    color: #ffffff;
+    font-family: 'Nunito Sans', sans-serif;
+    border: none;
+    outline: none;
+    padding: 10px 24px;
+    font-size: 1.1rem;
+    font-weight: 700;
+    border-radius: 10px;
+    text-decoration: none;
+    transition: background 0.2s, color 0.2s;
+    cursor: pointer;
+}
+
+.nav-links .nav-btn:hover {
+    background-color: #25487a;
+    color: #87CEEB;
+}
+
+.hero_section {
+    display: flex;
+    width: 80vw;
+    height: 80vh;
+    flex-direction: row;
+    margin: 50px auto;
+    gap: 50px;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero_left {
+    width: 40vw;
+}
+
+.hero_section img {
+    width: 30vw;
+    height: 70vh;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+.hero_right {
+    width: 40vw;
+    display: flex;
+    padding: 50px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.hero_right h1 {
+    font-family: 'Merienda', sans-serif;
+    color: #1A365D;
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.hero_right p {
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 1.2rem;
+    color: #25487a;
+}
+
+.guesthouse-listing {
+    width: 80vw;
+    margin: 60px auto 0 auto;
+    padding: 40px 30px;
+    background: #f8fbfd;
+    border-radius: 20px;
+    box-shadow: 0 4px 16px rgba(26, 54, 93, 0.07);
+    font-family: 'Nunito Sans', sans-serif;
+}
+
+.guesthouse-listing h2 {
+    font-family: 'Merienda', sans-serif;
+    color: #1A365D;
+    font-size: 2.2rem;
+    font-weight: 700;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.guest-house-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+}
+
+.guest-house-card {
+    background: #ffffff;
+    border-radius: 16px;
+    box-shadow: 0 2px 8px rgba(26, 54, 93, 0.10);
+    padding: 28px 24px;
+    width: 340px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 18px;
+    transition: box-shadow 0.2s;
+}
+
+.guest-house-card:hover {
+    box-shadow: 0 6px 24px rgba(26, 54, 93, 0.18);
+}
+
+.guest-house-card h3 {
+    font-family: 'Merienda', sans-serif;
+    color: #1A365D;
+    font-size: 1.4rem;
+    font-weight: 700;
+    margin-bottom: 6px;
+}
+
+.guest-house-card p {
+    font-size: 1rem;
+    color: #4A5568;
+    margin-bottom: 8px;
+    line-height: 1.5;
+}
+
+.guest-house-card ul {
+    margin: 0 0 8px 18px;
+    padding: 0;
+    font-size: 1rem;
+    color: #25487a;
+    list-style: disc inside;
+}
+
+.guest-house-card li {
+    margin-bottom: 4px;
+}
+
+.book-now-btn {
+    margin-top: 10px;
+    background-color: #87CEEB;
+    color: #1A365D;
+    font-family: 'Nunito Sans', sans-serif;
+    font-weight: 700;
+    font-size: 1.05rem;
+    border: none;
+    border-radius: 8px;
+    padding: 10px 28px;
+    text-decoration: none;
+    transition: background 0.2s, color 0.2s;
+    cursor: pointer;
+    align-self: flex-end;
+}
+
+.book-now-btn:hover {
+    background-color: #1A365D;
+    color: #ffffff;
+}
+
+.no-gh-msg {
+    color: #e53e3e;
+    font-size: 1.1rem;
+    text-align: center;
+    margin: 40px 0;
+    font-family: 'Nunito Sans', sans-serif;
+}
+
+.feature_section {
+    width: 80vw;
+    margin: 100px auto 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    text-align: center;
+}
+
+.feature_section h2 {
+    font-family: 'Merienda', sans-serif;
+    color: #1A365D;
+    font-weight: 700;
+    font-size: 2.2rem;
+    margin-bottom: 18px;
+}
+
+.feature_cards {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: stretch;
+    gap: 24px;
+    margin-top: 24px;
+    flex-wrap: wrap;
+}
+
+.f_card {
+    width: 260px;
+    min-height: 200px;
+    background-color: #ffffff;
+    border-radius: 20px;
+    padding: 22px 18px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.08);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none;
+    color: #1A365D;
+    transition: box-shadow 0.2s, transform 0.2s, background 0.2s;
+    border: 2px solid #87CEEB;
+    gap: 12px;
+}
+
+.f_card img {
+    width: 60px;
+    height: 60px;
+    margin-bottom: 10px;
+}
+
+.f_card h3 {
+    font-family: 'Merienda', sans-serif;
+    font-size: 1.15rem;
+    font-weight: 700;
+    margin-bottom: 8px;
+    text-align: center;
+}
+
+.f_card p {
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    color: #4A5568;
+    text-align: center;
+    margin: 0;
+}
+
+.f_card:hover {
+    box-shadow: 0 8px 24px rgba(26, 54, 93, 0.18);
+    background: #f0faff;
+    transform: translateY(-4px) scale(1.03);
+    border-color: #1A365D;
+    color: #25487a;
+}
+
+
+
+footer {
+    background-color: #87CEEB;
+    color: #1A365D;
+    padding: 50px 0;
+    margin-top: 100px;
+}
+
+.footer-content {
+    width: 100%;
+    margin: 0;
+    padding: 0 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 50px;
+}
+
+.footer-left {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    text-align: left;
+}
+
+.footer-left .logo {
+    display: flex;
+    flex-direction: row;
+    font-family: 'Merienda', sans-serif;
+    color: #ffffff;
+    font-size: 2rem;
+    margin-bottom: 20px;
+    align-items: center;
+    gap: 10px;
+}
+
+.footer-left p {
+    font-family: 'Nunito Sans', sans-serif;
+    line-height: 1.6;
+    opacity: 0.9;
+}
+
+.footer-right {
+    flex: 1;
+    text-align: right;
+}
+
+.footer-right h3 {
+    font-family: 'Playwrite AU SA', sans-serif;
+    color: #ffffff;
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+
+.footer-right p {
+    font-family: 'Nunito Sans', sans-serif;
+    margin: 10px 0;
+}
+
+.footer-right a {
+    color: #1A365D;
+    text-decoration: none;
+    transition: opacity 0.3s ease;
+}
+
+.footer-right a:hover {
+    opacity: 0.8;
+    text-decoration: underline;
+}

@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;700&display=swap');
+
+body {
+    background: linear-gradient(120deg, #87CEEB 0%, #1A365D 100%);
+    min-height: 100vh;
+    font-family: 'Nunito Sans', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    background: #fff;
+    border-radius: 18px;
+    box-shadow: 0 6px 32px rgba(26, 54, 93, 0.13);
+    width: 370px;
+    padding: 38px 32px 32px 32px;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 18px;
+}
+
+.tabs {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 18px;
+}
+
+.tabs button {
+    background: none;
+    border: none;
+    outline: none;
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: #1A365D;
+    padding: 10px 28px;
+    border-radius: 8px 8px 0 0;
+    cursor: pointer;
+    transition: background 0.2s, color 0.2s;
+    font-family: 'Nunito Sans', sans-serif;
+    opacity: 0.7;
+}
+
+.tabs button.active {
+    background: #87CEEB;
+    color: #1A365D;
+    opacity: 1;
+}
+
+.form-wrapper {
+    display: none;
+    flex-direction: column;
+    gap: 12px;
+    animation: fadeIn 0.3s;
+}
+
+.form-wrapper.active {
+    display: flex;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+label {
+    font-size: 1rem;
+    color: #1A365D;
+    font-weight: 700;
+    margin-bottom: 2px;
+}
+
+input[type="email"],
+input[type="password"],
+input[type="text"],
+input[type="date"] {
+    padding: 10px 12px;
+    border: 1.5px solid #87CEEB;
+    border-radius: 7px;
+    font-size: 1rem;
+    font-family: 'Nunito Sans', sans-serif;
+    background: #f8fbfd;
+    color: #25487a;
+    transition: border 0.2s;
+}
+
+input:focus {
+    border-color: #1A365D;
+    outline: none;
+}
+
+button[type="submit"] {
+    margin-top: 8px;
+    background: #1A365D;
+    color: #fff;
+    font-family: 'Nunito Sans', sans-serif;
+    font-weight: 700;
+    font-size: 1.08rem;
+    border: none;
+    border-radius: 8px;
+    padding: 11px 0;
+    cursor: pointer;
+    transition: background 0.2s, color 0.2s;
+}
+
+button[type="submit"]:hover {
+    background: #25487a;
+    color: #87CEEB;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px);}
+    to { opacity: 1;}
+}

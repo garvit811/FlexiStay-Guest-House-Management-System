@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Merienda:wght@700&family=Nunito+Sans:wght@400;700&display=swap');
+
+body {
+    background: linear-gradient(120deg, #87CEEB 0%, #1A365D 100%);
+    min-height: 100vh;
+    font-family: 'Nunito Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    font-family: 'Merienda', sans-serif;
+    color: #1A365D;
+    font-size: 2rem;
+    font-weight: 700;
+    margin: 40px 0 18px 0;
+    text-align: center;
+}
+
+p {
+    color: #25487a;
+    font-size: 1.1rem;
+    text-align: center;
+    margin: 0 0 32px 0;
+    font-family: 'Nunito Sans', sans-serif;
+}
+
+form {
+    background: #fff;
+    border-radius: 14px;
+    box-shadow: 0 4px 18px rgba(26, 54, 93, 0.10);
+    width: 90vw;
+    max-width: 600px;
+    margin: 0 auto 32px auto;
+    padding: 28px 32px 24px 32px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+fieldset {
+    border: 2px solid #87CEEB;
+    border-radius: 12px;
+    margin-bottom: 18px;
+    padding: 18px 20px 14px 20px;
+    background: #f8fbfd;
+    box-shadow: 0 2px 8px rgba(26, 54, 93, 0.07);
+}
+
+legend {
+    font-family: 'Merienda', sans-serif;
+    color: #1A365D;
+    font-size: 1.1rem;
+    font-weight: 700;
+    padding: 0 10px;
+}
+
+label {
+    display: inline-block;
+    margin: 0 18px 10px 0;
+    font-size: 1rem;
+    color: #25487a;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+input[type="checkbox"] {
+    accent-color: #1A365D;
+    margin-right: 6px;
+    transform: scale(1.15);
+}
+
+button[type="submit"] {
+    margin-top: 18px;
+    background: #1A365D;
+    color: #fff;
+    font-family: 'Nunito Sans', sans-serif;
+    font-weight: 700;
+    font-size: 1.08rem;
+    border: none;
+    border-radius: 8px;
+    padding: 12px 0;
+    cursor: pointer;
+    transition: background 0.2s, color 0.2s;
+}
+
+button[type="submit"]:hover {
+    background: #25487a;
+    color: #87CEEB;
+}
+
+@media (max-width: 700px) {
+    form, fieldset {
+        width: 98vw;
+        max-width: 98vw;
+        padding: 12px 2vw;
+    }
+    h1 {
+        font-size: 1.2rem;
+    }
+    legend {
+        font-size: 1rem;
+    }
+    label {
+        font-size: 0.98rem;
+    }
+}
