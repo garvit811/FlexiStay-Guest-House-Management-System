@@ -41,4 +41,4 @@ A web-based guest house booking and management platform developed using **PHP**,
 
 1. **Clone this repository**:
    ```bash
-   git clone 
+   git clone https://github.com/garvit811/FlexiStay-Guest-House-Management-System
