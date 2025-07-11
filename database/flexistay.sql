@@ -21,6 +21,10 @@ SET time_zone = "+00:00";
 -- Database: `flexistay`
 --
 
+CREATE DATABASE IF NOT EXISTS flexistay;
+USE flexistay;
+
+
 -- --------------------------------------------------------
 
 --
