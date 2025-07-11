@@ -18,18 +18,6 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         die("Invalid dates selected.");
     }
 
-    $checkBlock = $pdo->prepare("
-    SELECT COUNT(*) FROM gh_block_dates 
-    WHERE guesthouse_id = ? 
-    AND NOT (end_date < ? OR start_date > ?)
-    ");
-    $checkBlock->execute([$guesthouse_id, $checkin, $checkout]);
-    $isBlocked = $checkBlock->fetchColumn();
-
-    if ($isBlocked > 0) {
-        die("Booking not allowed: This guest house is not accepting bookings during selected dates.");
-    }
-
 
     $pdo->beginTransaction();
     try {
