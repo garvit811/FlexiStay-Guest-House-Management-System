@@ -7,8 +7,6 @@
 [![JavaScript](https://img.shields.io/badge/JavaScript-Vanilla-F7DF1E?logo=javascript&logoColor=black)](https://developer.mozilla.org/docs/Web/JavaScript)
 [![XAMPP](https://img.shields.io/badge/XAMPP-Localhost-F37623?logo=xampp&logoColor=white)](https://www.apachefriends.org/)
 [![License](https://img.shields.io/badge/License-MIT-green)](./LICENSE)
-[![Status](https://img.shields.io/badge/Status-Active-success)](#)
-[![Stars](https://img.shields.io/github/stars/garvit811/FlexiStay-Guest-House-Management-System?style=social)](https://github.com/garvit811/FlexiStay-Guest-House-Management-System)
 
 ---
 
