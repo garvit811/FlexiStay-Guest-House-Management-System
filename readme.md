@@ -1,5 +1,17 @@
 # 🏨 FlexiStay – Guest House Management System
 
+[![PHP](https://img.shields.io/badge/PHP-7.4+-777BB4?logo=php&logoColor=white)](https://www.php.net/)
+[![MySQL](https://img.shields.io/badge/MySQL-Database-4479A1?logo=mysql&logoColor=white)](https://www.mysql.com/)
+[![HTML5](https://img.shields.io/badge/HTML5-Frontend-E34F26?logo=html5&logoColor=white)](https://developer.mozilla.org/docs/Web/HTML)
+[![CSS3](https://img.shields.io/badge/CSS3-Style-1572B6?logo=css3&logoColor=white)](https://developer.mozilla.org/docs/Web/CSS)
+[![JavaScript](https://img.shields.io/badge/JavaScript-Vanilla-F7DF1E?logo=javascript&logoColor=black)](https://developer.mozilla.org/docs/Web/JavaScript)
+[![XAMPP](https://img.shields.io/badge/XAMPP-Localhost-F37623?logo=xampp&logoColor=white)](https://www.apachefriends.org/)
+[![License](https://img.shields.io/badge/License-MIT-green)](./LICENSE)
+[![Status](https://img.shields.io/badge/Status-Active-success)](#)
+[![Stars](https://img.shields.io/github/stars/garvit811/FlexiStay-Guest-House-Management-System?style=social)](https://github.com/garvit811/FlexiStay-Guest-House-Management-System)
+
+---
+
 A web-based guest house booking and management platform developed using **PHP**, **MySQL**, **HTML**, **CSS**, and **JavaScript**, running locally on **XAMPP**. The system allows a company to manage multiple guest houses and supports three user roles: **Admin**, **Clerk**, and **Guest**.
 
 ---
