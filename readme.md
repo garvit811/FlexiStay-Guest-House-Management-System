@@ -113,3 +113,13 @@ Register directly from the app
 - Email notifications for bookings
 - Analytics dashboard for Admin
 - Responsive UI with Bootstrap/Tailwind
+
+
+---
+
+## 📜 License
+
+    - This project is licensed under the MIT License.
+    - You’re free to use and modify it with attribution.
+
+---
