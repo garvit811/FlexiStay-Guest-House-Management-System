@@ -10,17 +10,6 @@
 
 FlexiStay is a comprehensive guest house management system designed to streamline the booking and administration process for companies managing multiple properties. Built with PHP and MySQL, it offers a centralized platform to handle reservations, room allocation, and user management, reducing manual overhead and improving efficiency for admins, clerks, and guests.
 
----
-
-## 📸 Screenshots
-
-A quick look at the system's interface across different user roles.
-
-| Admin Dashboard | Guest Booking Page | Clerk Room View |
-| :---: | :---: | :---: |
-|  |  |  |
-
-> **Note:** Take screenshots of your application and upload them to your repository or an image hosting service like Imgur to replace the placeholders above.
 
 ---
 
