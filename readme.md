@@ -54,7 +54,7 @@ Follow these instructions to set up the project on your local machine.
 1.  **Clone the repository** into your XAMPP `htdocs` directory:
     ```bash
     cd C:/xampp/htdocs
-    git clone [https://github.com/garvit811/FlexiStay-Guest-House-Management-System.git](https://github.com/garvit811/FlexiStay-Guest-House-Management-System.git)
+    git clone https://github.com/garvit811/FlexiStay-Guest-House-Management-System
     ```
 2.  **Rename the folder** (optional) for a cleaner URL:
     ```bash
